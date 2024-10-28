@@ -36,7 +36,7 @@ def answer(message):
         if result==int(message.text):
             bot.send_message(message.chat.id,'good job')
         else:
-            bot.send_message(message.chat.id,f'wrong,try again{result}')
+            bot.send_message(message.chat.id,f'wrong,try again')
 @bot.message_handler(commands=['stop'])
 def stop(message):
     bot.send_message(message.chat.id,'bye')
